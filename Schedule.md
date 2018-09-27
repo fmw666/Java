@@ -1,7 +1,7 @@
 # Java开发全套精编教程【完整版】
 学习网站： https://study.163.com/course/introduction.htm?courseId=1559013#/courseDetail?tab=1
 <br/>
-#### 目录
+### 目录
 > **章节1: &ensp;&ensp; 自学有困扰？**  
 > 课时1 &ensp;&ensp; 课前必学-到底该如何在线学习开发？<br/>
 > 课时2 &ensp;&ensp; 全套进阶课程、题库代码免费领取<br/>
@@ -187,3 +187,5 @@
 > 课时165 &ensp;&ensp; 选课教务系统之15--链接数据库<br/>
 > 课时166 &ensp;&ensp; Java&大数据：数据库高级讲解<br/>
 > 课时167 &ensp;&ensp; Java开发：一节课理解面向对象的核心思想br/><br/>
+<br/>
+完成当天学习进度后，目录课程后面打勾，每天至少坚持学习一个小时哦~
