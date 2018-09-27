@@ -154,7 +154,36 @@
 > 课时137 &ensp;&ensp; Java高级语言-IO流-装饰模式<br/>
 > 课时138 &ensp;&ensp; 案例讲解--使用字节流复制一个文件夹<br/><br/>
 > **章节14: &ensp;&ensp; Java高级语言-IO流-字符流** <br/>
+> 课时139 &ensp;&ensp; Java高级语言-IO流-字符流-1<br/>
+> 课时140 &ensp;&ensp; Java高级语言-IO流-字符流-2<br/>
+> 课时141 &ensp;&ensp; Java高级语言-IO流-ObjectInputStream和ObjectOutputStream<br/>
+> 课时142 &ensp;&ensp; Java高级语言-IO流-InputStreamReader和OutputStreamWriter<br/>
+> 课时143 &ensp;&ensp; Java高级语言-IO流-RandomAccessFile<br/>
+> 课时144 &ensp;&ensp; 案例讲解--使用多线程去复制一个文件<br/><br/>
 > **章节15: &ensp;&ensp; Java高级语言-网络编程** <br/>
+> 课时145 &ensp;&ensp; Java高级语言-网络编程-网络基础知识和通讯要素<br/>
+> 课时146 &ensp;&ensp; Java高级语言-网络编程-基于TCP协议的Socket编程<br/>
+> 课时147 &ensp;&ensp; Java高级语言-网络编程-基于UDP协议的Socket编程<br/>
+> 课时148 &ensp;&ensp; 案例讲解--多客服端TCP连接应用<br/>
+> 课时149 &ensp;&ensp; Java高级语言-网络编程--URL类的使用<br/><br/>
 > **章节16: &ensp;&ensp; Java高级语言-Java新特性** <br/>
+> 课时150 &ensp;&ensp; Java高级语言-Annotation简介和标准Annotation介绍<br/>
+> 课时151 &ensp;&ensp; Java高级语言-Java新特性-自定义Annotation<br/>
+> 课时152 &ensp;&ensp; Java高级语言-Java新特性-Meta Annotation<br/>
+> 课时153 &ensp;&ensp; Java高级语言-Java新特性-反射与Annotation<br/><br/>
 > **章节17: &ensp;&ensp; Java高级语言-XML** <br/>
+> 课时154 &ensp;&ensp; Java高级语言-XML SAX解析<br/>
+> 课时155 &ensp;&ensp; Java高级语言-XML SAX解析(上)<br/>
+> 课时156 &ensp;&ensp; Java高级语言-XML SAX解析(下)<br/>
+> 课时157 &ensp;&ensp; Java高级语言-XML DOM解析<br/>
+> 课时158 &ensp;&ensp; Java高级语言-示例讲解--XML DOM解析<br/>
+> 课时159 &ensp;&ensp; 选课教务系统之14--解析配置文件<br/><br/>
 > **章节18: &ensp;&ensp; Java高级语言-数据库基础** <br/>
+> 课时160 &ensp;&ensp; Java高级语言-数据库基础-数据库概述、sqlite数据库<br/>
+> 课时161 &ensp;&ensp; Java高级语言-数据库基础-基本SQL语句(上)<br/>
+> 课时162 &ensp;&ensp; Java高级语言-数据库基础-基本SQL语句(下)<br/>
+> 课时163 &ensp;&ensp; Java高级语言-数据库基础-JDBC API，Java程序访问数据库<br/>
+> 课时164 &ensp;&ensp; Java高级语言-数据库基础-JDBC API示例讲解<br/>
+> 课时165 &ensp;&ensp; 选课教务系统之15--链接数据库<br/>
+> 课时166 &ensp;&ensp; Java&大数据：数据库高级讲解<br/>
+> 课时167 &ensp;&ensp; Java开发：一节课理解面向对象的核心思想br/><br/>
