@@ -2,15 +2,15 @@ import java.util.Scanner;
 
 public class PrintCalenda {
 	public static void main(String[] args) {
-		int year;// ±£´æÊäÈëµÄÄê
-		int month;// ±£´æÊäÈëµÄÔÂ
-		boolean isRn;// ÈòÄê±£´ætrue,·ñÔòÎªfalse
-		int days = 0;// ±£´æÖ¸¶¨ÔÂµÄÌìÊı
-		System.out.println("**************Ê¹ÓÃÍòÄêÀú**************");
+		int year;// ä¿å­˜è¾“å…¥çš„å¹´
+		int month;// ä¿å­˜è¾“å…¥çš„æœˆ
+		boolean isRn;// é—°å¹´ä¿å­˜true,å¦åˆ™ä¸ºfalse
+		int days = 0;// ä¿å­˜æŒ‡å®šæœˆçš„å¤©æ•°
+		System.out.println("**************ä½¿ç”¨ä¸‡å¹´å†**************");
 		Scanner input = new Scanner(System.in);
-		System.out.print("ÇëÊäÈëÄê:");
+		System.out.print("è¯·è¾“å…¥å¹´:");
 		year = input.nextInt();
-		System.out.print("ÇëÊäÈëÔÂ:");
+		System.out.print("è¯·è¾“å…¥æœˆ:");
 		month = input.nextInt();
 
 		if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
@@ -19,16 +19,16 @@ public class PrintCalenda {
 			isRn = false;
 		}
 		if (isRn) {
-			System.out.println(year + "ÊÇÈòÄê");
+			System.out.println(year + "æ˜¯é—°å¹´");
 		} else {
-			System.out.println(year + "·ÇÈòÄê");
+			System.out.println(year + "éé—°å¹´");
 		}
 
 		/*
 		 * if(month==1||month==3||month==5||month==7||month==8||month==10||month==12){
 		 * days=31; }else if(month==2){ if(isRn){ days=29; }else{ days=28; } }else
 		 * if(month==4||month==6||month==9||month==11){ days=30; }else{
-		 * System.out.println("ÊäÈëÔÂ·İÓĞÎó"); }
+		 * System.out.println("è¾“å…¥æœˆä»½æœ‰è¯¯"); }
 		 */
 
 		switch (month) {
@@ -55,10 +55,10 @@ public class PrintCalenda {
 			days = 30;
 			break;
 		default:
-			System.out.println("ÊäÈëÔÂ·İÓĞÎó");
+			System.out.println("è¾“å…¥æœˆä»½æœ‰è¯¯");
 		}
 
-		System.out.println(year + "Äê" + month + "ÔÂ¶ÔÓ¦µÄÌìÊıÎª:" + days);
+		System.out.println(year + "å¹´" + month + "æœˆå¯¹åº”çš„å¤©æ•°ä¸º:" + days);
 
 	}
-}
+} 
