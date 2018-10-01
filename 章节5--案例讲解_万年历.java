@@ -33,7 +33,7 @@ public class PrintCalendaDemo1 {
 			}
 		}
 		//计算输入月份之前的天数和
-		for(int i=1;i<=5month;i++){
+		for(int i=1;i<=month;i++){
 			switch (month) {
 			case 1:
 			case 3:
