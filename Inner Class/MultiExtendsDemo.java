@@ -36,5 +36,5 @@ class C{
 	
 	public void showB(){
 		new B1().showB();
-	}
+	} 
 }
