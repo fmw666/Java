@@ -46,5 +46,5 @@ interface IAnimal{
 /*class Dog extends Animal{
 	public void eat(){
 		System.out.println("啃骨头");
-	}
+	} 
 }*/
