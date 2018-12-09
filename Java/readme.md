@@ -1,1 +1,135 @@
-# 这个文件夹暂时没用
+# 章节18(课时160~课时162)   
+## 数据库概述   
+> **数据库概念**    
+> &ensp;&ensp;&ensp;&ensp;数据库（Database）是按照数据结构来组织、存储和管理数据的仓库，随着信息技术和市场的发展，数据库不再仅仅用来存储和管理数据，而提供用户所需要的各种数据管理的方式    
+> **数据库特点**        
+> &ensp;&ensp;&ensp;&ensp;1. 数据结构化   
+> &ensp;&ensp;&ensp;&ensp;2. 数据的共享性高，冗余度低，易扩充   
+> &ensp;&ensp;&ensp;&ensp;3. 数据的独立性高  
+> &ensp;&ensp;&ensp;&ensp;4. 数据由DBMS统一管理和控制   
+> **数据库管理系统**    
+> &ensp;&ensp;&ensp;&ensp;1. 数据库管理系统(DataBase Management System)是一种操纵和管理数据库的大型软件，用于建立、使用和维护数据库，简称DBMS   
+> &ensp;&ensp;&ensp;&ensp;2. 用户通过DBMS访问数据库中的数据，数据库管理员通过DBMS进行数据库的维护工作。它可使多个应用程序和用户用不同的方法同时或不同时刻去建立、修改和查询数据库  
+> &ensp;&ensp;&ensp;&ensp;3. DBMS提供数据定义语言DDL（Data Definition Language）与数据操作语言DML（Data Manipulation Language），供用户定义数据库的模式结构与权限约束，实现对数据的追加、删除等操作   
+> &ensp;&ensp;&ensp;&ensp;4. 常见的关型数据库管理系统：`Oracle，DB2，SQLServer，MySQL`等   
+> &ensp;&ensp;&ensp;&ensp;5. DBMS必须提供以下数据控制功能：   
+> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;① 数据的安全性(Security)保护   
+> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;② 数据的完整性(Integrity)检查  
+> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;③ 并发(Concurrency)控制  
+> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;④ 数据库恢复(Recovery)   
+> **结构化查询语言SQL**   
+> &ensp;&ensp;&ensp;&ensp;1. 结构化查询语言(Structured Query Language)简称SQL，是一种数据库查询和程序设计语言，用于存取数据以及查询、更新和管理关系数据库系统   
+> &ensp;&ensp;&ensp;&ensp;2. 结构化查询语言是高级的非过程化编程语言，允许用户在高层数据结构上工作。它不要求用户指定对数据的存放方法，也不需要用户了解具体的数据存放方式，所以，具有完全不同底层结构的数据库系统可以使用相同的结构化查询语言作为数据输入与管理的接口   
+> **结构化查询语言SQL遵循ANSI SQL标准**   
+> **SQL语言包含4个部分**   
+> &ensp;&ensp;&ensp;&ensp;1. 数据定义语言(DDL)     
+> &ensp;&ensp;&ensp;&ensp;例如：CREATE、DROP、ALTER等语句     
+> &ensp;&ensp;&ensp;&ensp;2. 数据操作语言(DML)   
+> &ensp;&ensp;&ensp;&ensp;例如：INSERT（插入）、UPDATE（修改）、DELETE（删除）语句    
+> &ensp;&ensp;&ensp;&ensp;3. 数据查询语言(DQL)   
+> &ensp;&ensp;&ensp;&ensp;例如：SELECT语句   
+> &ensp;&ensp;&ensp;&ensp;4. 数据控制语言(DCL)   
+> &ensp;&ensp;&ensp;&ensp;例如：GRANT、REVOKE、COMMIT、ROLLBACK等语句     
+## SQLite数据库   
+> **SQLite数据库特点**   
+> &ensp;&ensp;&ensp;&ensp;1. SQLite是一款轻型关系型数据库管理系统，设计目标是嵌入式环境，目前已经在很多嵌入式产品中得到使用   
+> &ensp;&ensp;&ensp;&ensp;2. SQLite占用资源非常低，在嵌入式设备中，可能只需要几百K的内存。支持Windows/Linux/Unix等主流操作系统，同时能够跟很多程序语言相结合，如`Tcl、C#、PHP、Java`等，比起`Mysql、PostgreSQL`这两款开源数据库管理系统，它的处理速度更快  
+> &ensp;&ensp;&ensp;&ensp;3. SQLite第一个Alpha版本诞生于2000年5月，至今已有十多年，较新的是版本SQLite 3   
+> &ensp;&ensp;&ensp;&ensp;4. 官方网站： [http://www.sqlite.org](http://www.sqlite.org)  
+> **下载和安装**   
+> &ensp;&ensp;&ensp;&ensp;链接： [http://www.sqlite.org/sqlite-shell-win32-x86-3071000.zip](http://www.sqlite.org/sqlite-shell-win32-x86-3071000.zip)  
+> &ensp;&ensp;&ensp;&ensp;假设解压后将`Sqlite3.exe`文件放置在D盘下，进入命令行控制台，输入命令创建一个数据库文件test.db，并退出   
+> **Sqlite常用图形化管理工具**   
+> &ensp;&ensp;&ensp;&ensp;SQLite有很多优秀的图形化管理工具，如：`sqlite developer，sqliteadministrator，sqlite database browser`。这些工具已内置了sqlite3数据库，无需再进行数据库连接配置，可直接使用  
+> &ensp;&ensp;&ensp;&ensp;sqlite developer：较新的版本是Sqlite Developer 3.9.9，安装文件SqliteDev399.exe，默认安装路径：`C:\Program Files\SharpPlus\SqliteDev`   
+## 数据类型和约束  
+> **数据类型**   
+> &ensp;&ensp;&ensp;&ensp;大多数数据库表的字段都指定了相关的数据类型，相当于Java语言编程中变量的数据类型。SQLite采用动态数据类型，可以对字段不指定任何数据类型，SQLite会根据存入值自动判断   
+> &ensp;&ensp;&ensp;&ensp;SQLite具有以下五种数据类型：   
+> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; **NULL：** 空值相当于Java中null   
+> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; **INTEGER：** 带符号的整型，相当于Java中int型   
+> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; **REAL：** 浮点数字，相当于Java中float/double型   
+> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; **TEXT/VARCHAR：** 字符串文本，相当于Java中String类   
+> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; **BLOB：** 二进制对象，相当于Java中byte数组   
+> **约束**   
+> &ensp;&ensp;&ensp;&ensp;1. 数据库表中存储数据时，有一些数据有明显的约束条件   
+> &ensp;&ensp;&ensp;&ensp;2. 比如一所学校关于教师的数据表，其中字段可能有如下约束：  
+> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;年龄 - 至少大于20岁   
+> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;国籍 - 默认中国  
+> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;姓名 - 不能为空   
+> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;员工号 - 唯一  
+> &ensp;&ensp;&ensp;&ensp;3. CREATE TABLE 创建表时，应该将每个字段的约束条件进行说明（如果有的话），以后往表里输入数据的时候，系统会自动检查是否满足约束条件，如不满足会报错    
+> &ensp;&ensp;&ensp;&ensp;4. SQLite3有如下约束   
+> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;NOT NULL - 非空    
+> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;UNIQUE - 非空   
+> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;PRIMARY KEY - 主键   
+> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;FOREIGN KEY - 外键   
+> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;CHECK - 条件检查   
+> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;DEFAULT - 默认   
+## 创建表   
+> **语法**    
+```sql
+create table tabname(col1 type1[not null][primary key],col2 type2[not null],..)
+```
+
+|字段名|类型|长度|约束|说明|
+|:-:|:-:|:-:|:-:|:-:|
+|id|INTEGER||主键，自增长|编号|
+|name|VARCHAR|20|非空|姓名|
+|cid|Interger|||所在班级|
+|age|INTEGER|||年龄|
+|gender|BIT||大于18且小于60|性别|
+|score|REAL||默认为1，表示男|成绩|
+```sql
+create table student(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name VARCHAR(20) NOT NULL,
+    cid INTEGER,
+    age INTEGER CHECK(age>18 and age<60),
+    gender BIT DEFAULT(1),
+    score REAL
+);
+```
+## insert语句   
+> **语法**    
+```sql
+insert into table1(field1,field2) value(value1,value2)
+```
+> **示例**   
+```sql
+insert into student(name,cid,gender,age,score)value('宋江',1,1,45,46.5);
+```
+## update语句   
+> **语法**    
+```sql
+update table1 set field1=value1 where 范围
+```
+> **示例**   
+```sql
+update student set name='小刚' where name='小明';
+```
+## select语句   
+> **语法**    
+```sql
+select * from table1 where 范围
+```
+> **示例**   
+- 查询编号为1的学生信息   
+```sql
+select * from student where id=1;
+```
+- 查询学生表的所有学生的编号，姓名和成绩三项信息   
+```sql
+select id,name,score from student;
+```
+## delete语句  
+> **语法**    
+```sql
+delete from table1 where 范围
+```
+> **示例**   
+- 删除成绩小于60分学生信息   
+```sql
+delete from student where score<60;
+```
+
