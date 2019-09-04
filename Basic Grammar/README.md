@@ -1,15 +1,21 @@
-# ♨️Java基础语法
-*涵盖前面1-6章内容*
-+ [Java基本说明](https://github.com/fmw666/Java/blob/master/Basic%20Grammar/%E7%AB%A0%E8%8A%821.md) 
+## 🚀 Java 基础语法
 
-+ [数据类型](https://github.com/fmw666/Java/blob/master/Basic%20Grammar/%E7%AB%A0%E8%8A%822.md)
+<div align="right">
+    <i>涵盖前面 1-6章 内容</i>
+</div>
 
-+ [运算符](https://github.com/fmw666/Java/blob/master/Basic%20Grammar/%E7%AB%A0%E8%8A%823.md) 
+<div align="center">
 
-+ [条件语句](https://github.com/fmw666/Java/blob/master/Basic%20Grammar/%E7%AB%A0%E8%8A%824.md)
+🏷 [Java基本说明](%E7%AB%A0%E8%8A%821.md) 
 
-+ [循环语句](https://github.com/fmw666/Java/blob/master/Basic%20Grammar/%E7%AB%A0%E8%8A%825.md) 
+🏷 [数据类型](%E7%AB%A0%E8%8A%822.md)
 
-+ [数组](https://github.com/fmw666/Java/blob/master/Basic%20Grammar/%E7%AB%A0%E8%8A%826.md)   
- 
- 
+🏷 [运算符](%E7%AB%A0%E8%8A%823.md) 
+
+🏷 [条件语句](%E7%AB%A0%E8%8A%824.md)
+
+🏷 [循环语句](%E7%AB%A0%E8%8A%825.md) 
+
+🏷 [数组](%E7%AB%A0%E8%8A%826.md)
+
+</div>
