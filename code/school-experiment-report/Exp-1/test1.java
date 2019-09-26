@@ -34,6 +34,7 @@ public class test1 {
             }    
         }
         
+        input.close();
         System.out.println("\n(deposit=" + deposit + ", rate=" + rate + ", year=" + year + ")");
 
         Double totalDeposit = deposit * Math.pow((1.0f + rate), year);
