@@ -7,9 +7,10 @@ public class test2 {
 
         System.out.print("Please input a sentense: ");
         String strSen = input.nextLine();
+        
         // match blank space number ,if > 1 then = 1
-        // Example: This .is a wonderFul time,to shaRe.with yOu.
-        // Output: This .is a wonderFul time,to shaRe.with yOu.
+        // Example: This .is  a wonderFul    time,to shaRe.with yOu.
+        //  Output: This .is a wonderFul time,to shaRe.with yOu.
         strSen = strSen.replaceAll("\\s{1,}", " ");
         System.out.println("\nInput Sentense is:\n\"" + strSen + "\"\n (regular -> no extra more Spaces)");
 
