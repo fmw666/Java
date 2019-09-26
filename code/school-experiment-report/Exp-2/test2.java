@@ -7,6 +7,7 @@ public class test2 {
 
         System.out.print("Please input a sentense: ");
         String strSen = input.nextLine();
+        input.close();
         
         // match blank space number ,if > 1 then = 1
         // Example: This .is  a wonderFul    time,to shaRe.with yOu.
