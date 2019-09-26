@@ -16,6 +16,8 @@ public class test2 {
         System.out.print("Please input the second Matrix(B)'s columns : ");
         int mBCol = input.nextInt();
         System.out.println();
+        
+        input.close();
 
         short choose = 0;
         if (mACol != mBRow && mARow != mBCol) {
