@@ -35,6 +35,7 @@ public class test3{
             }
         }
         
+        input.close();
         System.out.println("(" + start + ", " + layer + ")");
 
         int end = start + (layer - 1) * 2;
