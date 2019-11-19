@@ -1,7 +1,7 @@
-## &emsp;&emsp;&emsp;🚀 Java 基础语法
+## &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;🚀 Java 基础语法
 
 <div align="right">
-    <i>xxxxxxxx</i>
+    <i>write by fmw...&emsp;&emsp;&emsp;</i>
 </div>
 
 <br>
@@ -26,6 +26,6 @@
 
 <hr>
 
---完--
+- 完 -
 
 </div>
