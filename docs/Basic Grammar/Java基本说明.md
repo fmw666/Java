@@ -1,26 +1,5 @@
 <div align="center">
-     <table align="center">
-          <thead>
-               <tr>
-                    <th align="center">Ⅰ</th>
-                    <th align="center">Ⅱ</th>
-                    <th align="center">Ⅲ</th>
-                    <th align="center">Ⅳ</th>
-                    <th align="center">Ⅴ</th>
-                    <th align="center">Ⅵ</th>
-               </tr>
-          </thead>
-          <tbody>
-               <tr>
-                    <td align="center"><a href="">Java基本说明</a></td>
-                    <td align="center"><a href="">数据类型</a></td>
-                    <td align="center"><a href="">运算符</a></td>
-                    <td align="center"><a href="">条件语句</a></td>
-                    <td align="center"><a href="">循环语句</a></td>
-                    <td align="center"><a href="">数组</a></td>
-               </tr>
-          </tbody>
-     </table>
+     Java基本说明 / <a href="">数据类型</a> / <a href="">运算符</a> / <a href="">条件语句</a> / <a href="">循环语句</a> / <a href="">数组</a>
 </div>
 
 <div align="right">
