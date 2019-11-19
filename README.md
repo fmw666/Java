@@ -1,12 +1,6 @@
-# 🌈 Java 学习 之 *基础知识点大集合*
+# 🌈 Java 编程全套指南
 
-#### 网易云课堂链接：
-
-Java开发全套精编教程【完整版】  https://study.163.com/course/introduction.htm?courseId=1559013#/courseDetail?tab=1
- 
-<div align="center">
-    <a name="img"><img src="pics/course.jpg" width="1000"></a>
-</div>
+> 推荐初学者一套网课：[Java开发全套精编教程【完整版】](https://study.163.com/course/introduction.htm?courseId=1559013#/courseDetail?tab=1)
 
 ## 📚 目录
 
