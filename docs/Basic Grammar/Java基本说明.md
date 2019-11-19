@@ -1,7 +1,5 @@
-<div align="center"><h1>⚡ 章节1</h1></div>
-
 <div align="right">
-    <a href="https://github.com/fmw666/Java/blob/master/Basic%20Grammar/">返回目录⤴</a>
+    <a href="../">返回目录⤴</a>
 </div>
 
 + **[💬 Java的基本介绍](#-java的基本介绍)**
